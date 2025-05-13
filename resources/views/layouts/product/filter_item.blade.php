@@ -14,7 +14,7 @@
     $phantram = $pro['price'] > 0 ? 100 - ($pro['discount'] / $pro['price']) * 100 : 0;
 @endphp
    <div class="col-6  col-sm-3  col-md-3 col-lg-3  product-col">
-    <div class="item_product_main">
+    <div class="item_product_main ">
         <form action="{{ route('add.to.cart') }}" method="post" class="variants product-action"
             enctype="multipart/form-data" data-id="{{ $pro['id'] }}">
             @csrf
@@ -212,7 +212,7 @@
                 @endforeach
             </div>
             <div class="product-info">
-                <h3 class="product-name"><a
+                <h3 class="product-name line-camp-2"><a
                         href="{{ route('detailProduct', ['cate' => $pro['cate_slug'], 'type' => $pro['type_slug'] ? $pro['type_slug'] : 'loai', 'id' => $pro['slug']]) }}"
                         title="{{ $pro['name'] }}">
                         {{ $pro['name'] }}</a></h3>

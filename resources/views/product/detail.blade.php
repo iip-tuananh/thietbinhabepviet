@@ -851,7 +851,7 @@
                   
                   </div>
                   <div class="product-info">
-                  <h3 class="product-name"><a href="/products/android-tivi-aqua-43-inch-aqt43k800fg" title="Android Tivi Aqua 43 inch AQT43K800FG">Android Tivi Aqua 43 inch AQT43K800FG</a></h3>
+                  <h3 class="product-name line-camp-2"><a href="/products/android-tivi-aqua-43-inch-aqt43k800fg" title="Android Tivi Aqua 43 inch AQT43K800FG">Android Tivi Aqua 43 inch AQT43K800FG</a></h3>
                   
                   
                   

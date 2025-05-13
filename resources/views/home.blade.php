@@ -13,44 +13,7 @@
 @section('script')
 @endsection
 @section('content')
-    <script type="text/x-custom-template" data-template="sticky-nav">
-    <div class="toogle-nav-wrapper w-100 ">
-        <div class=" d-flex align-items-center" style="height: 52px; font-size: 1rem; font-weight: 500">
-            <div class="icon-bar btn menu-bar mr-3 ml-0 p-0 d-inline-flex">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            Danh mục sản phẩm 
-        </div>
-
-        <div class="navigation-wrapper">
-            <nav class="h-100">
-                <ul class="navigation list-group list-group-flush scroll">
-                    @foreach ($categoryhome as $item)
-                        <li class="menu-item list-group-item">
-                            <a href="{{ route('allListProCate', ['danhmuc' => $item->slug]) }}" title="{!!languageName($item->name)!!}">
-                                <img loading="lazy" width='24' height='24'
-                                    src="{{$item->avatar}}"
-                                    alt="{!!languageName($item->name)!!}" />
-                                <span>{!!languageName($item->name)!!}</span>
-                                <i class='icon-right' data-toggle-submenu>
-                                    <svg class="icon">
-                                        <use xlink:href="#icon-arrow" />
-                                    </svg>
-                                </i>
-                            </a>
-                        </li>
-                    @endforeach
-                </ul>
-            </nav>
-        </div>
-
-    </div>
-         <div class="sticky-overlay">
-
-    </div>
-</script>
+ 
 
 
     <section class="section awe-section-1 section-mainslide">

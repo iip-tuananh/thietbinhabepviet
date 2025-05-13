@@ -6,7 +6,7 @@
 <a class="product-smart" href="{{route('detailProduct',['cate'=>$item['cate_slug'],'type'=>$item['type_slug'] ? $item['type_slug'] : 'loai','id'=>$item['slug']])}}" title="{{$item->name}}">
     <div class="image_thumb"><img width="58" height="58" class="lazyload loaded" src="//bizweb.dktcdn.net/thumb/compact/100/506/650/products/1-0db8d1cc-0547-41f1-9ca8-f8a1a0da9817.jpg?v=1708617243000" data-src="{{$img[0]}}" alt="{{$item->name}}" data-was-processed="true"></div>
     <div class="product-info">
-       <h3 class="product-name"><span>{{$item->name}}</span></h3>
+       <h3 class="product-name line-camp-2"><span>{{$item->name}}</span></h3>
        @if ($item->price > 0)
                 @if ($item->status_variant == 1)
                 <div class="price-box">

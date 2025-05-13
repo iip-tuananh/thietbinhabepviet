@@ -9,7 +9,7 @@
                         <span class="bar"></span>
                     </div>
                 </div>
-                <div class="col-5 col-lg-2 col-xl-3 header-left tuan-a">
+                <div class="col-2 col-lg-2 col-xl-2 header-left tuan-a">
                     <a href="{{route('home')}}" class="logo-wrapper d-sm-none a2" title='{{$setting->company}}'>
                         <img loading="lazy" class="img-fluid logo-top-tuan" src="{{ $setting->logo }}"
                             alt="{{$setting->company}}" width="800" height="200" style="background-color: white;">
@@ -25,7 +25,7 @@
                 </div>
 
                 {{-- tìm kiếm làm sau --}}
-                      <div class="col-lg-4 col-12 header-center pl-lg-0" id="search-header">
+           <div class="col-5 col-lg-5 col-12 header-center pl-lg-0" id="search-header">
             <form action="{{ route('search_result') }}" method="post"
                 class="input-group search-bar custom-input-group" role="search" id="ajax-search-form">
                 @csrf
