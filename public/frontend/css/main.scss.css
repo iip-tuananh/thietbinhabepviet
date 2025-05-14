@@ -8022,12 +8022,7 @@ aside.aside-item ul li label {
 .products-view-grid {
     position: relative;
 }
-.logo-top-tuan{
-    padding: 10px  !important;
-    border-radius: 10px;
-    width: 150px;
-    height: 68px !important;
-}
+
 header a{
     color: rgb(255, 255, 255) !important;
 }
@@ -8042,4 +8037,20 @@ header a{
     -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical !important;
     overflow: hidden !important;
+}
+/* trên 976px */
+@media (min-width: 976px) {
+    .logo-top-tuan {
+        padding: 10px !important;
+        border-radius: 10px;
+        width: 150px;
+        height: 68px !important;
+    }
+}
+@media (max-width: 975px) {
+    .logo-top-tuan {
+        padding: 5px !important;
+        border-radius: 6px;
+   
+    }
 }
