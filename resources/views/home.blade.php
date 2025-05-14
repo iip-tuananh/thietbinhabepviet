@@ -79,7 +79,7 @@
                                                 <picture>
                                                     <source media="(max-width: 480px)" srcset="{{ $item->imagehome }}">
                                                     <img class=" img-fluid mx-auto" src="{{ $item->imagehome }}"
-                                                        width="700" height="265" alt="{!! languageName($item->name) !!}"> />
+                                                        width="700" height="265" alt="{!! languageName($item->name) !!}"> 
                                                 </picture>
                                             </a>
                                         </div>
