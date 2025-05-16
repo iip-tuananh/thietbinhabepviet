@@ -41,3 +41,14 @@ export const saveCategory = ({commit},opt) => {
         })
     });
 };
+
+
+export const updateSTTCategory = ({commit}, opt) => {
+    return new Promise((resolve, reject) => {
+        HTTP.post('/api/product/category/update-stt-category', opt).then(response => {
+            resolve(response.data);
+        }).catch(error => {
+            reject(error);
+        });
+    });
+};

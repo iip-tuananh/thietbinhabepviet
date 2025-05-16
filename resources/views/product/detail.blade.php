@@ -246,17 +246,10 @@
                                                                 width='16' height='16' class='mr-2' />
                                                             KHUYẾN MÃI - ƯU ĐÃI
                                                         </h3>
+                                                        <div class="">{!!languageName($product->description)!!}</div>
                                                         <ul class="promotion-box">
-                                                            <li>Bán đúng giá - không đăng ảo
-                                                                Giao hàng lắp đặt nội thành Hà Nội trong 2h
-                                                            </li>
-                                                            <li>Bảo hành chính hãng tại nhà theo tiêu chuẩn của nhà sản xuất
-                                                            </li>
-                                                            <li>Quý khách là đại lý, nhà thầu, thợ cần hỗ trợ số lượng lớn,
-                                                                xin
-                                                                vui lòng liên hệ tổng đài bán hàng: <a
-                                                                    href="tel:{{ $setting->phone1 }}">{{ $setting->phone1 }}</a>
-                                                            </li>
+                                                        
+                                                            
                                                             @foreach ($khuyenmai as $item)
                                                                 <li>
                                                                     {{ $item->detail }}

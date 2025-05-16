@@ -59,7 +59,7 @@
                     v-model="objData.phone2"
                   />
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Fax</label>
                   <vs-input
                     type="text"
@@ -67,7 +67,7 @@
                     class="w-100"
                     v-model="objData.fax"
                   />
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label>Email</label>
                   <vs-input
@@ -95,7 +95,7 @@
                     v-model="objData.google"
                   />
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Code Google analytics</label>
                   <vs-input
                     type="text"
@@ -103,7 +103,7 @@
                     class="w-100"
                     v-model="objData.GA"
                   />
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label>Iframe GG map</label>
                   <vs-input
@@ -121,12 +121,12 @@
                   <label>Logo</label>
                   <image-upload type="avatar" :oldImage="objData.logo" v-model="objData.logo" :title="'logo'"></image-upload>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Logo khác</label>
                   <image-upload type="avatar"  :oldImage="objData.logo_footer" v-model="objData.logo_footer" :title="'logo_footer'"></image-upload>
-                </div>
+                </div> -->
                 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Link Popup</label>
                   <vs-input
                     type="text"
@@ -134,18 +134,18 @@
                     class="w-100"
                     v-model="objData.linkpopup"
                   />
-                </div>
-                <div class="form-group">
+                </div> -->
+                <!-- <div class="form-group">
                   <label>Trạng thái hiển thị popup</label>
                   <vs-select v-model="objData.statusPopup"
                   >
                       <vs-select-item  value="1" text="Hiện" />
                       <vs-select-item  value="0" text="Ẩn" />
                     </vs-select>
-                </div>
+                </div> -->
 
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label>Ảnh Header</label>
                   <image-upload type="avatar" :oldImage="objData.imgHeader" v-model="objData.imgHeader" :title="'imgHeader'"></image-upload>
                 </div>
@@ -165,7 +165,7 @@
                       <vs-select-item  value="1" text="Hiện" />
                       <vs-select-item  value="0" text="Ẩn" />
                     </vs-select>
-                </div>
+                </div> -->
               <vs-button color="primary" @click="saveSetting">Lưu</vs-button>
             </div>
           </div>

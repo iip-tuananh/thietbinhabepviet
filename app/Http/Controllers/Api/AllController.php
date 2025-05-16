@@ -77,8 +77,7 @@ class AllController extends Controller
                 'messenge' => 'success',
             ],200);
         } else {
-            return response()->json([
-'data' => 'fail'
+            return response()->json(['data' => 'fail'
             ],500);
         }
     }

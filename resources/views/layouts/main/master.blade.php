@@ -4393,6 +4393,16 @@
       </script>
       <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
       <div class="floating-buttons">
+        <a href="{{$setting->google}}" class="floating-button viewed-button" title="Liên hệ qua Zalo"
+            >
+         <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
+         <span class="tooltip-text">Liên hệ qua Zalo</span>
+         </a>
+         <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
+            >
+         <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
+         <span class="tooltip-text">Liên hệ qua mess</span>
+         </a>
          <a href="{{ route('compareList') }}" class="floating-button compare-button" title="So sánh">
          <i class="fa fa-retweet" aria-hidden="true" style="color: white"></i>
          <span class="tooltip-text">So sánh</span>

@@ -28,13 +28,13 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>Mô tả ngắn</label>
-                <vs-textarea v-model="objData.description[0].content" />
+                <label>Mô tả ngắn khuyến mãi trang chi tiết</label>
+                <TinyMce v-model="objData.description[0].content" />
                 <el-button size="small" @click="showSettingLangExist('description')">Đa ngôn ngữ</el-button>
                  <div class="dropLanguage" v-if="showLang.description == true">
                     <div class="form-group" v-for="item,index in lang" :key="index">
                         <label v-if="index != 0">{{item.name}}</label>
-                        <vs-textarea v-if="index != 0" v-model="objData.description[index].content" />
+                        <TinyMce v-if="index != 0" v-model="objData.description[index].content" />
                     </div>
                 </div>
               </div>

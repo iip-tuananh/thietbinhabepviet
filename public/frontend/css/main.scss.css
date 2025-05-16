@@ -5148,7 +5148,7 @@ li.addThis_item img {
     padding-left: 0;
     margin-bottom: 0;
     align-content: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 @media (max-width: 768px) {
@@ -5420,8 +5420,8 @@ span.maumoi {
 }
 
 .floating-button img {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -8043,8 +8043,10 @@ header a{
     .logo-top-tuan {
         padding: 10px !important;
         border-radius: 10px;
-        width: 150px;
-        height: 68px !important;
+        position: absolute;
+        width: 179px;
+        top: -22px;
+        height: 85px !important;
     }
 }
 @media (max-width: 975px) {
@@ -8053,4 +8055,22 @@ header a{
         border-radius: 6px;
    
     }
+}
+@media (max-width: 767px) {
+    .tuan-none{
+       display: none !important;
+    }
+    .dichuyen-menu{
+    transform: translateX(0px) !important;
+    }
+    .menu-scroll{
+      transform: translateX(0px) !important;
+}
+}
+
+.dichuyen-menu{
+    transform: translateX(-17px);
+}
+.menu-scroll{
+      transform: translateX(21px);
 }

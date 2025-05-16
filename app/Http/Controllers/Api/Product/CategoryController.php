@@ -8,10 +8,31 @@ use  App\models\product\Category;
 use File,Validator;
 
 class CategoryController extends Controller
+{   
+ 
+public function updateSTTCategory(Request $request)
 {
+    $data = $request->all();
+    foreach ($data['data'] as $key => $value) {
+        // Kiểm tra trùng link_demo
+        // $exists = \App\models\product\Category::where('link_demo', $value['link_demo'])
+        //     ->where('id', '!=', $value['id'])
+        //     ->exists();
+        // if ($exists) {
+        //     return response()->json([
+        //         'message' => 'Vị trí đã tồn tại!'
+        //     ], 422);
+        // }
+        \App\models\product\Category::where('id', $value['id'])->update(['link_demo'=>$value['link_demo']]);
+    }
+    return response()->json([
+        'message' => 'success'
+    ]);
+}
     public function add(Request $request, Category $category)
     {
         $data = $category->saveCate($request);
+        dd($data);
         return response()->json([
     		'message' => 'Save Success',
     		'data'=> $data

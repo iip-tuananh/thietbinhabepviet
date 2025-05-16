@@ -16,12 +16,12 @@
                 v-model="keyword"
                 @keyup="searchCategory()"
               />
-              <vs-table max-items="5" pagination :data="list">
+              <vs-table max-items="10" pagination :data="list">
                 <template slot="thead">
                   <vs-th>ID</vs-th>
                   <vs-th>Tên</vs-th>
                   <vs-th>Avatar</vs-th>
-                  <vs-th>Title</vs-th>
+                  <vs-th>Vị trí menu</vs-th>
                   <vs-th>Hành động</vs-th>
                 </template>
                 <template slot-scope="{data}">
@@ -31,7 +31,27 @@
                     <vs-td :data="tr.id">
                       <vs-avatar size="70px" :src="tr.avatar" />
                     </vs-td>
-                    <vs-td :data="tr.id">{{tr.path}}</vs-td>
+
+
+                    <!-- ajax thay đổi vị trí menu -->
+                  <!-- filepath: c:\laragon\www\thietbibep\resources\js\components\cate\list.vue -->
+<vs-td :data="tr.id">
+  <div style="position:relative;">
+    <div v-if="isDuplicate(tr)" style="color:#e74c3c; font-size:12px; margin-bottom:2px;">
+      ⚠️ Vị trí này đã bị trùng!
+    </div>
+    <vs-input
+      v-model="tr.link_demo"
+      @change="updateLinkDemo(tr)"
+      style="width:80px"
+      type="number"
+      class="mauvitri"
+      min="1"
+      :step="1"
+    />
+  </div>
+</vs-td>
+                  <!-- ======================================== -->
                     <vs-td :data="tr.id">
                       <router-link :to="{name:'edit_category',params:{id:tr.id}}">
                         <vs-button
@@ -76,11 +96,18 @@ export default {
     
   },
   methods: {
-    ...mapActions(["listCate","destroyCate", "loadings"]),
+    ...mapActions(["listCate","destroyCate", "loadings","updateSTTCategory"]),
     closePop(event) {
       this.listCategory();
       this.popupActivo = event;
     },
+     isDuplicate(tr) {
+    // Đếm số lượng mục có cùng link_demo (trừ chính nó)
+    if (!tr.link_demo) return false;
+    return this.list.filter(item => 
+      item.link_demo == tr.link_demo && item.id != tr.id
+    ).length > 0;
+  },
     listCategory() {
       this.loadings(true);
       this.listCate({ keyword: this.keyword })
@@ -89,6 +116,21 @@ export default {
           this.list = response.data;
         });
     },
+updateLinkDemo(tr) {
+  this.loadings(true);
+  this.updateSTTCategory({
+    data: [{ id: tr.id, link_demo: tr.link_demo }]
+  })
+  .then(() => {
+    this.loadings(false);
+    this.$success('Cập nhật vị trí thành công');
+  })
+  .catch((err) => {
+    this.loadings(false);
+    this.$error(err.response?.data?.message || 'Vị trí đã tồn tại hoặc có lỗi!');
+    this.listCategory();
+  });
+},
     searchCategory() {
       if (this.timer) {
         clearTimeout(this.timer);

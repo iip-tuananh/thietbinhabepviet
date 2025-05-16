@@ -153,10 +153,10 @@ export default {
               name: "Danh mục bài viết",
               path: "/blog/category",
             },
-            {
-              name: "Loại bài viết",
-              path: "/blog/type",
-            },
+            // {
+            //   name: "Loại bài viết",
+            //   path: "/blog/type",
+            // },
           ],
         },
         {
@@ -170,17 +170,17 @@ export default {
             }
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Banner Slogan",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "bannerslogan",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Banner Slogan",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "bannerslogan",
+        //     }
+        //   ],
+        // },
         {
           icon: "mdi mdi-file-image menu-icon",
           name: "Website",
@@ -191,17 +191,17 @@ export default {
               path: "/banner",
             },
             {
-              name: "Đối tác",
+              name: "Thương Hiệu",
               path: "/partner",
             },
             {
               name: "Cài đặt chung",
               path: "/setting",
             },
-            {
-              name: "Text Cứng",
-              path: "/language/keyword",
-            }
+            // {
+            //   name: "Text Cứng",
+            //   path: "/language/keyword",
+            // }
           ],
         },
         {
@@ -245,17 +245,17 @@ export default {
             }
           ],
         },
-        {
-          icon: "mdi mdi-newspaper menu-icon",
-          name: "Quản lý Review",
-          route_name: "",
-          sub: [
-            {
-              name: "Danh sách",
-              path: "/reviewCus",
-            }
-          ],
-        },
+        // {
+        //   icon: "mdi mdi-newspaper menu-icon",
+        //   name: "Quản lý Review",
+        //   route_name: "",
+        //   sub: [
+        //     {
+        //       name: "Danh sách",
+        //       path: "/reviewCus",
+        //     }
+        //   ],
+        // },
       ],
     };
   },
