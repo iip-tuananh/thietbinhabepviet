@@ -538,102 +538,6 @@
                 </div>
             </div>
         </section>
-        {{--    
-   <section class="section d-xl-block d-none">
-      <div id="ega-sticky-addcart" class="section ">
-         <div class="container">
-            <div class="card">
-               <div class="productAnchor_horizonalNavs">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="productAnchor_horizonalNav">
-                           <div class="product_info_image hidden-xs">
-                              <img loading="lazy" class="pict image"
-                                 src="//product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_7f60e98b886340869ca2b69dfa39be2e_medium.jpg"
-                                 alt="Smart Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS">
-                           </div>
-                           <div class="product_info_content details-pro hidden-xs ">
-                              <span class="product_info_name"
-                                 title="Smart Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS">Smart
-                              Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS</span>
-                              <div class="price-box">
-                                 <span class="special-price"><span
-                                    class="price product-price bk-product-price">99,990,000₫</span>
-                                 </span> <!-- Giá Khuyến mại -->
-                                 <span class="old-price">
-                                 <del class=" product-price-old sale">118,890,000₫</del>
-                                 </span> <!-- Giá gốc -->
-                                 <div class="label_product">
-                                    -16%
-                                 </div>
-                                 <span class="vat">Giá đã bao gồm VAT (Không bao gồm gia dụng)</span>
-                                 <div class="save-price">
-                                    (Tiết kiệm: <span>18,900,000₫</span>)
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="product_info_buttons">
-                              <div class="box-variant   ">
-                              </div>
-                              <div class="soluong soluong_type_1 show">
-                                 <label>Số lượng:</label>
-                                 <div class="custom input_number_product custom-btn-number ">
-                                    <button class="btn btn_num num_1 button button_qty"
-                                       onClick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if( !isNaN( qtypro ) && qtypro > 1 ){result.value--;stick_result.value--;}else{return false;}"
-                                       type="button">
-                                       <svg class="icon">
-                                          <use xlink:href="#icon-minus" />
-                                       </svg>
-                                    </button>
-                                    <input type="text" id="sticky_qtym" name="quantity"
-                                       value="1" maxlength="3"
-                                       class="form-control prd_quantity pd-qtym"
-                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
-                                       onchange="var result = document.getElementsByClassName('pd-qtym')[0];if(this.value == 0){this.value=1;}else{result.value=this.value}">
-                                    <button class="btn btn_num num_2 button button_qty"
-                                       onClick="var result = document.getElementsByClassName('pd-qtym')[0];var stick_result = document.getElementsByClassName('pd-qtym')[1]; var qtypro = result.value; if( !isNaN( qtypro )) result.value++;stick_result.value++;return false;"
-                                       type="button">
-                                       <svg class="icon">
-                                          <use xlink:href="#icon-plus" />
-                                       </svg>
-                                    </button>
-                                 </div>
-                              </div>
-                              <div class="form-product">
-                                 <div class="button_actions " style="grid-template-columns: 1fr">
-                                    <button type="submit"
-                                       class="btn btn_base btn_add_cart btn-cart add_to_cart mt-0 ">
-                                    <span class="text_1">Thêm vào giỏ </span>
-                                    </button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   --}}
-        {{-- 
-   <section class="section mt-3" id="section-comments">
-      <div class="container">
-         <div class="card">
-            <div class="title_module mb-3 heading-bar d-flex justify-content-between align-items-center p-0">
-               <h2 class="bf_flower heading-bar__title">
-                  Hỏi đáp - Bình luận
-               </h2>
-            </div>
-            <div id="fb-root"></div>
-            <div class="fb-comments"
-               data-href="https://sgt.com.vn/products/smart-tivi-lg-qned-evo-ai-miniled-4k-100-inch-100qned86as"
-               data-numposts="5" width="100%" data-colorscheme="light"></div>
-         </div>
-      </div>
-   </section>
-   --}}
         <section class="section container sec_tab">
             <div class='row ml-sm-0 mr-sm-0'>
                 <div class='col-12 pl-0 pr-0'>
@@ -930,7 +834,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -943,7 +847,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1171,7 +1075,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1184,7 +1088,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1315,7 +1219,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1328,7 +1232,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt </u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1453,7 +1357,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1466,7 +1370,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1597,7 +1501,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1610,7 +1514,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1735,7 +1639,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1748,7 +1652,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1879,7 +1783,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1892,7 +1796,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2120,7 +2024,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2133,7 +2037,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2264,7 +2168,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2277,7 +2181,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2683,7 +2587,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2696,7 +2600,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3021,7 +2925,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3034,7 +2938,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3262,7 +3166,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3275,7 +3179,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3406,7 +3310,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3419,7 +3323,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3544,7 +3448,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3557,7 +3461,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3688,7 +3592,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3701,7 +3605,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3826,7 +3730,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3839,7 +3743,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3970,7 +3874,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3983,7 +3887,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4211,7 +4115,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4224,7 +4128,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4355,7 +4259,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4368,7 +4272,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4774,7 +4678,7 @@
                   
                   
                   
-                  <li><a href="https://sgt.com.vn/blogs/news/chuong-trinh-ho-tro-tra-gop-0-lai-suat"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4787,7 +4691,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="https://sgt.com.vn/pages/chinh-sach-van-chuyen-va-lap-dat-sgt"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt SGT</u></i><br></a></li>
+                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   

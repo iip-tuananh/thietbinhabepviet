@@ -107,12 +107,6 @@
                                 </form>
                             </div>
                         </div>
-                        {{-- <div class="block social-login--facebooks margin-top-20 text-center">
-                            <p class="a-center text-secondary">
-                                Hoặc đăng nhập bằng
-                            </p>
-                            <div id="wrap-social-login-plus"></div>
-                        </div> --}}
                     </div>
                 </div>
             </div>

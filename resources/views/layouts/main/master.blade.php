@@ -119,25 +119,7 @@
          }
          window.awe_lazyloadImage = awe_lazyloadImage;
       </script>
-      <!-- Google Tag Manager -->
-      <script>
-         (function(w, d, s, l, i) {
-             w[l] = w[l] || [];
-             w[l].push({
-                 'gtm.start': new Date().getTime(),
-                 event: 'gtm.js'
-             });
-             var f = d.getElementsByTagName(s)[0],
-                 j = d.createElement(s),
-                 dl = l != 'dataLayer' ? '&l=' + l : '';
-             j.async = true;
-             j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-             f.parentNode.insertBefore(j, f);
-         })(window, document, 'script', 'dataLayer', 'GTM-KZ6H2HH');
-      </script>
-      <!-- End Google Tag Manager -->
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-252675354-1"></script>
+    
       <script>
          window.dataLayer = window.dataLayer || [];
          
@@ -149,34 +131,6 @@
          gtag('config', 'UA-252675354-1');
       </script>
       <title>{{ $setting->webname }}</title>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-144MKW7CC8"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         
-         function gtag() {
-             dataLayer.push(arguments);
-         }
-         gtag('js', new Date());
-         
-         gtag('config', 'G-144MKW7CC8');
-      </script>
-      <link rel="icon" href="{{ $setting->favicon }}" type="image/x-icon" />
-      <link rel="dns-prefetch" href="https://sgt.com.vn">
-      <link rel="dns-prefetch" href="//hstatic.net">
-      <link rel="dns-prefetch" href="//theme.hstatic.net/">
-      <link rel="dns-prefetch" href="//file.hstatic.net/">
-      <link rel="dns-prefetch" href="//stats.hstatic.net/">
-      <link rel="dns-prefetch" href="//www.google-analytics.com/">
-      <link rel="dns-prefetch" href="//www.googletagmanager.com/">
-      <link rel="dns-prefetch" href="//www.google.com">
-      <link rel="dns-prefetch" href="//fonts.gstatic.com">
-      <link rel="dns-prefetch" href="//fonts.googleapis.com">
-      <link rel="dns-prefetch" href="//www.facebook.com">
-      <link rel="dns-prefetch" href="//connect.facebook.net">
-      <link rel="dns-prefetch" href="//static.ak.facebook.com">
-      <link rel="dns-prefetch" href="//static.ak.fbcdn.net">
-      <link rel="dns-prefetch" href="//s-static.ak.facebook.com">
       <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/main.scss.css') }}" />
       <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/index.css') }}">
       <link rel="preload" as='style' type="text/css" href="{{ asset('frontend/css/responsive.css') }}">
@@ -185,18 +139,12 @@
          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
       <link rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-      <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
       <head>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
    </head>
    <link rel="preload" as='style' type="text/css"
       href="{{ asset('frontend/css/quickviews-popup-cart.css') }}">
-   {{-- 
-   <link rel="preload" as="image" href="//theme.hstatic.net/200000574527/1001200251/14/slider_1.jpg?v=443"
-      media="screen and (max-width: 480px)">
-   <link rel="preload" as="image" href="//theme.hstatic.net/200000574527/1001200251/14/slider_1.jpg?v=443"
-      media="screen and (min-width: 481px)">
-   --}}
+
    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap-4-3-min.css') }}" type="text/css"
       media="all" />
    <style>
@@ -510,21 +458,6 @@
    <link rel="preload" as="script" href="{{ asset('frontend/js/slick-min.js') }}" />
    <script src='{{ asset('frontend/js/slick-min.js') }}' type='text/javascript'></script>
    <!-- content_for_header -->
-   <script type='text/javascript'>
-      //<![CDATA[
-      if ((typeof Haravan) === 'undefined') {
-          Haravan = {};
-      }
-      Haravan.culture = 'vi-VN';
-      Haravan.shop = 'sgt-store.myharavan.com';
-      Haravan.theme = {
-          "name": "Bản sao chép của 11/04/2023 Mai 03/08/2023 760049",
-          "id": 1001200251,
-          "role": "main"
-      };
-      Haravan.domain = 'sgt.com.vn';
-      //]]>
-   </script>
    <script>
       //<![CDATA[
       (function() {
@@ -550,97 +483,6 @@
       visibility: hidden;
       }
    </style>
-   <script type='text/javascript'>
-      window.HaravanAnalytics = window.HaravanAnalytics || {};
-      window.HaravanAnalytics.meta = window.HaravanAnalytics.meta || {};
-      window.HaravanAnalytics.meta.currency = 'VND';
-      var meta = {
-          "page": {
-              "pageType": "home"
-          }
-      };
-      for (var attr in meta) {
-          window.HaravanAnalytics.meta[attr] = meta[attr];
-      }
-      window.HaravanAnalytics.AutoTrack = true;
-   </script>
-   <script>
-      //<![CDATA[
-      window.HaravanAnalytics.ga = "UA-252675354-1";
-      window.HaravanAnalytics.enhancedEcommerce = true;
-      (function(i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r;
-          i[r] = i[r] || function() {
-              (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
-          a = s.createElement(o),
-              m = s.getElementsByTagName(o)[0];
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-      ga('create', window.HaravanAnalytics.ga, {
-          cookieDomain: 'auto',
-          siteSpeedSampleRate: '10',
-          sampleRate: 100,
-          allowLinker: true
-      });
-      ga('send', 'pageview');
-      ga('require', 'linker');
-      ga('require', 'linker');
-      try {
-          if (window.location.href.indexOf('checkouts') > -1) {
-              var themeid = Haravan.theme.id;
-              ! function(e, t, n) {
-                  var a = t.getElementsByTagName(n)[0],
-                      c = t.createElement(n);
-                  c.async = false, c.src = "https://theme.hstatic.net/200000574527/" + themeid +
-                      "/14/main-tracking.js?v=" + (new Date).getTime(), a.parentNode.insertBefore(c, a)
-              }(window, document, "script");
-          }
-      } catch (e) {};
-      //]]>
-   </script>
-   <script>
-      window.HaravanAnalytics.fb = "3907006726289637";
-      //<![CDATA[
-      ! function(f, b, e, v, n, t, s) {
-          if (f.fbq) return;
-          n = f.fbq = function() {
-              n.callMethod ?
-                  n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-          };
-          if (!f._fbq) f._fbq = n;
-          n.push = n;
-          n.loaded = !0;
-          n.version = '2.0';
-          n.queue = [];
-          t = b.createElement(e);
-          t.async = !0;
-          t.src = v;
-          s = b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t, s)
-      }(window,
-          document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-      // Insert Your Facebook Pixel ID below. 
-      fbq('init', "3907006726289637", {}, {
-          'agent': 'plharavan'
-      });
-      fbq('track', 'PageView');
-      //]]>
-   </script>
-   <noscript><img height='1' width='1' style='display:none'
-      src='https://www.facebook.com/tr?id=3907006726289637&amp;ev=PageView&amp;noscript=1' /></noscript>
-   <!-- content_for_header - end -->
-   <!--
-      Theme Information
-      --------------------------------------
-      Theme ID: EGA TechStore
-      Version: 1.4.0_20220603
-      Company: EGANY
-      changelog: //theme.hstatic.net/200000574527/1001200251/14/ega-changelog.js?v=443
-      ---------------------------------------
-      -->
    <style>
       .home-slider--desktop {
       display: none;
@@ -710,16 +552,10 @@
       }
       }
    </style>
-   {{-- 
-   <meta name="google-site-verification" content="C4jVvQagG66-v3XLPyLb1d2ohqqlj-tRLkJw09eP8C4" />
-   --}}
+  
    <script src='{{ asset('frontend/js/lazyload.js') }}' type='text/javascript'></script>
    </head>
    <body class="template-class" id="template-index">
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZ6H2HH" height="0" width="0"
-         style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
       <div class="opacity_menu"></div>
       <style>
          .header_menu.active {
@@ -996,7 +832,7 @@
          		</div>
          				<div class="messenger border-left p-2 w-50 border-left">
          						
-         			<a  href="https://m.me/sgt.com.vn" title="https://m.me/sgt.com.vn">
+         			<a  href="{{route('home')}}" title="{{route('home')}}">
          				Nhắn tin
          				<i class="fab fa-facebook-messenger ml-3"></i>
          			</a>
@@ -1158,244 +994,7 @@
                class="fas fa-times"></i></a>
          </div>
       </div>
-      <script type="text/javascript">
-         Haravan.doNotTriggerClickOnThumb = false;
-         
-         function changeImageQuickView(img, selector) {
-             var src = $(img).attr("src");
-             src = src.replace("_compact", "");
-         
-             var $videoEl = $(selector).parent();
-         
-             if ($(img).hasClass('video')) {
-                 $(selector).parent().find('img').hide()
-                 var codevideo = $(img).parent().data().videocode.split("_")[1];
-                 var videoHtml =
-                     `<iframe class="img-responsive" width="560" height="315" src="https://www.youtube.com/embed/${codevideo}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                 $videoEl.append(videoHtml);
-             } else {
-                 $videoEl.find("iframe").remove();
-                 $(selector).parent().find('img').show()
-                 $(selector).attr("src", src);
-             }
-         }
-         
-         function validate(evt) {
-             var theEvent = evt || window.event;
-             var key = theEvent.keyCode || theEvent.which;
-             key = String.fromCharCode(key);
-             var regex = /[0-9]|\./;
-             if (!regex.test(key)) {
-                 theEvent.returnValue = false;
-                 if (theEvent.preventDefault) theEvent.preventDefault();
-             }
-         }
-         var selectCallbackQuickView = function(variant, selector) {
-             $('#quick-view-product form').show();
-             var productItem = jQuery('.quick-view-product .product-item'),
-                 addToCart = productItem.find('.add_to_cart_detail'),
-                 installmentBtn = productItem.find('.btn-installment'),
-                 productPrice = productItem.find('.price'),
-                 comparePrice = productItem.find('.old-price'),
-                 discountLabel = productItem.find('.label_product'),
-                 form2 = jQuery('.soluong1'),
-                 status = productItem.find('.soluong'),
-                 sku = productItem.find('.sku_'),
-                 totalPrice = productItem.find('.total-price span');
-         
-             if (variant && variant.sku) {
-                 sku.text(variant.sku);
-             } else {
-                 sku.text('Đang cập nhật');
-             }
-             if (variant && variant.available) {
-                 var form = jQuery('#' + selector.domIdPrefix).closest('form');
-                 for (var i = 0, length = variant.options.length; i < length; i++) {
-                     var radioButton = form.find('.swatch[data-option-index="' + i + '"] :radio[value="' + variant
-                         .options[i] + '"]');
-                     if (radioButton.size()) {
-                         radioButton.get(0).checked = true;
-                     }
-                 }
-         
-                 addToCart.removeClass('disabled').removeAttr('disabled');
-                 addToCart.html(`THÊM VÀO GIỎ`).removeAttr('disabled');
-                 if (variant.price / 100 >= +3000000) {
-                     installmentBtn.removeClass('hidden')
-                     addToCart.removeClass('is-full')
-                 }
-                 status.text('Còn hàng');
-                 if (variant.price < 1) {
-                     $("#quick-view-product .price").html('Liên hệ');
-                     $("#quick-view-product del, #quick-view-product .quantity_wanted_p").hide();
-                     $("#quick-view-product .prices .old-price").hide();
-                     discountLabel.hide()
-                     form2.hide();
-                 } else {
-                     productPrice.html(Haravan.formatMoney(variant.price, "{{ 'amount' }}₫"));
-                     if (variant.compare_at_price > variant.price) {
-                         comparePrice.html(Haravan.formatMoney(variant.compare_at_price, "{{ 'amount' }}₫"))
-                             .show();
-                         let save = variant.compare_at_price - variant.price;
-                         let savePerCent = Math.ceil(save / variant.compare_at_price * 100);
-                         if (savePerCent > 99) {
-                             savePerCent = 99
-                         }
-                         if (savePerCent < 1) {
-                             savePerCent = 1
-                         }
-                         discountLabel.html('-' + savePerCent + "%").show()
-                         productPrice.addClass('on-sale');
-                     } else {
-                         comparePrice.hide();
-                         discountLabel.hide()
-                         productPrice.removeClass('on-sale');
-                     }
-                     $(".quantity_wanted_p").show();
-                     $(".input_qty_qv_").show();
-                     form2.show();
-                 }
-         
-         
-         
-                 updatePricingQuickView();
-         
-                 /*begin variant image*/
-                 if (variant && variant.featured_image) {
-         
-                     var originalImage = $("#product-featured-image-quickview");
-                     var newImage = variant.featured_image;
-                     var element = originalImage[0];
-                     Haravan.Image.switchImage(newImage, element, function(newImageSizedSrc, newImage, element) {
-                         $('#thumblist_quickview img').each(function() {
-                             var parentThumbImg = $(this).parent();
-                             var productImage = $(this).parent().data("image");
-                             if (newImageSizedSrc.includes(productImage)) {
-                                 $(this).parent().trigger('click');
-                                 return false;
-                             }
-                         });
-         
-                     });
-                     $('#product-featured-image-quickview').attr('src', variant.featured_image.src);
-                 }
-             } else {
-                 addToCart.addClass('disabled').attr('disabled', 'disabled');
-                 addToCart.removeClass('hidden').addClass('btn_buy is-full').attr('disabled', 'disabled').html(
-                     '<div class="disabled">Hết hàng</div>').show();
-                 installmentBtn.addClass('hidden')
-                 status.text('Hết hàng');
-                 $(".quantity_wanted_p").show();
-                 if (variant) {
-                     if (variant.price < 1) {
-                         $("#quick-view-product .price").html('Liên hệ');
-                         $("#quick-view-product del").hide();
-                         //$("#quick-view-product .quantity_wanted_p").hide();
-                         $("#quick-view-product .prices .old-price").hide();
-                         discountLabel.hide()
-         
-                         form2.hide();
-                         comparePrice.hide();
-                         discountLabel.hide();
-                         productPrice.removeClass('on-sale');
-                         addToCart.addClass('disabled').attr('disabled', 'disabled');
-                         addToCart.removeClass('hidden').addClass('btn_buy is-full').attr('disabled', 'disabled').html(
-                             '<div class="disabled">Hết hàng</div>').show();
-                         installmentBtn.addClass('hidden')
-                     } else {
-                         productPrice.html(Haravan.formatMoney(variant.price, "{{ 'amount' }}₫"));
-                         if (variant.compare_at_price > variant.price) {
-                             comparePrice.html(Haravan.formatMoney(variant.compare_at_price, "{{ 'amount' }}₫"))
-                                 .show();
-                             productPrice.addClass('on-sale');
-                             let save = variant.compare_at_price - variant.price;
-                             let savePerCent = Math.ceil(save / variant.compare_at_price * 100);
-                             if (savePerCent > 99) {
-                                 savePerCent = 99
-                             }
-                             if (savePerCent < 1) {
-                                 savePerCent = 1
-                             }
-                             discountLabel.html('-' + savePerCent + "%").show()
-                         } else {
-                             comparePrice.hide();
-                             productPrice.removeClass('on-sale');
-                             $("#quick-view-product .prices .old-price").html('');
-                             discountLabel.hide()
-         
-                         }
-         
-                         $(".input_qty_qv_").hide();
-                         form2.hide();
-                         addToCart.addClass('disabled').attr('disabled', 'disabled');
-                         addToCart.removeClass('hidden').addClass('btn_buy is-full').attr('disabled', 'disabled').html(
-                             '<div class="disabled">Hết hàng</div>').show();
-                         installmentBtn.addClass('hidden')
-                     }
-                 } else {
-                     $("#quick-view-product .price").html('Liên hệ');
-                     $("#quick-view-product del").hide();
-                     $("#quick-view-product .quantity_wanted_p").hide();
-                     $("#quick-view-product .prices .old-price").hide();
-                     discountLabel.hide()
-         
-                     form2.hide();
-                     comparePrice.hide();
-                     discountLabel.hide();
-         
-                     productPrice.removeClass('on-sale');
-                     addToCart.addClass('disabled').attr('disabled', 'disabled');
-                     addToCart.removeClass('hidden').addClass('btn_buy is-full').attr('disabled', 'disabled').html(
-                         '<div class="disabled">Hết hàng</div>').show();
-                     installmentBtn.addClass('hidden')
-                 }
-             }
-             /*begin variant image*/
-             if (variant && variant.featured_image) {
-         
-                 var originalImage = $("#product-featured-image-quickview");
-                 var newImage = variant.featured_image;
-                 var element = originalImage[0];
-                 Haravan.Image.switchImage(newImage, element, function(newImageSizedSrc, newImage, element) {
-                     $('#thumblist_quickview img').each(function() {
-                         var parentThumbImg = $(this).parent();
-                         var productImage = $(this).parent().data("image");
-                         if (newImageSizedSrc.includes(productImage)) {
-                             $(this).parent().trigger('click');
-                             return false;
-                         }
-                     });
-         
-                 });
-                 $('#product-featured-image-quickview').attr('src', variant.featured_image.src);
-             }
-         
-         };
-         
-         if (typeof copyButton === 'undefined' && typeof codeCopy === 'undefined') {
-             const copyButton = {
-                 "copiedText": "Đã chép",
-                 "copyText": "Sao chép"
-             };
-         
-             function codeCopy(el) {
-         
-                 const copyText = copyButton.copyText;
-                 const copiedText = el.dataset.copiedText;
-                 const coupon = el.dataset.code;
-         
-         
-                 const _this = $(el);
-                 _this.html(`<span>${copiedText}</span>`);
-                 _this.addClass('disabled');
-                 setTimeout(function() {
-                     _this.html(`<span>${copyText}</span>`);
-                     _this.removeClass('disabled');
-                 }, 3000)
-                 navigator.clipboard.writeText(coupon);
-             }
-         }
-      </script>
+    
       <script>
          initQuickView();
          var product = {};
@@ -3583,15 +3182,6 @@
          }
          window.awe_category = awe_category;
          
-         function initRecapchaScript() {
-             ! function(e, t, n) {
-                 var a = t.getElementsByTagName(n)[0],
-                     c = t.createElement(n);
-                 c.async = true, c.src =
-                     "https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-", a.parentNode
-                     .insertBefore(c, a)
-             }(window, document, "script");
-         }
          
          function awe_backtotop() {
              if ($('.back-to-top').length) {
@@ -4043,7 +3633,7 @@
              cro_hotline_show = false,
              cro_hotline_number = "02422665858",
              cro_mess_show = false,
-             cro_mess_url = "https://m.me/sgt.com.vn",
+             cro_mess_url = "{{route('home')}}",
              cro_home_show = 0,
              cro_home_title = "Ưu đãi",
              cro_home_url = "/collections/khuyen-mai",
@@ -4301,56 +3891,76 @@
          <ul class="addThis_listing list-unstyled">
             <li class="addThis_item addThis_phone">
                <div class="phone-vr-circle-fill"></div>
-               <a class="addThis_item--icon" href="tel:{{ $setting->phone1 }}" rel="nofollow">
-               <img class="img-fluid" src="{{ asset('frontend/images/icons8-phone-100.png') }}"
-                  alt="Gọi ngay cho chúng tôi" loading="lazy" width="88" height="88" />
-               <span class="tooltip-text">Gọi ngay cho chúng tôi</span>
-               </a>
+               <a class="addThis_item--icon" 
+   href="javascript:void(0)" 
+   rel="nofollow"
+   data-toggle="modal" 
+   data-target="#modalHotline">
+   <img class="img-fluid" src="{{ asset('frontend/images/icons8-phone-100.png') }}"
+      alt="Gọi ngay cho chúng tôi" loading="lazy" width="88" height="88" />
+   <span class="tooltip-text">Gọi ngay cho chúng tôi</span>
+</a>
             </li>
          </ul>
       </div>
-      <script>
-         const EGASmartSearchConfigs = {
-             settings: {
-                 isEnabled: true,
-                 // color
-                 colorBg: '#FFFFFF',
-                 colorBgHover: '#F7F7F7',
-                 colorLabelBg: '#F7F7F7',
-                 colorLabelText: '#A0A0A0',
-                 colorItemBorder: '#EEEEEE',
-                 colorItemTextTitle: '#0288D1',
-                 colorItemTextPrice: '#dd0115',
-                 colorItemTextCompareAtPrice: '#A7A7A7',
-                 colorItemTextSku: '#747474',
-                 colorItemTextDescription: '#747474',
-                 colorItemTextViewAll: '#0288D1',
-                 colorHeaderText: '#dd0115',
-                 colorLoading: '#ff0000',
-                 // general
-                 searchAccuracy: 'all',
-                 isFixedSearch: 'fixed',
-                 searchWidth: '390px',
-                 searchHeight: '380px',
-                 searchView: 'list',
-                 // product
-                 productSortby: '&sortby=quantity:product=desc',
-                 displayProductDescription: false,
-                 productLimit: 5
-             },
-             CONSTANT: {
-                 shopDomain: '',
-                 searchView: 'ega.smartsearch.json',
-                 textHeaderSectionTitle: 'Kết quả tìm kiếm cho ',
-                 textProductSectionTitle: 'Sản phẩm',
-                 textArticleSectionTitle: 'Bài viết',
-                 notFound: 'Không tìm thấy kết quả nào',
-                 textFrom: '',
-                 textShowAll: 'Xem tất cả sản phẩm có chứa '
-             }
-         }
-         window.egaSmartSearchValid = true;
-      </script>
+      <!-- Modal Hotline -->
+<div class="modal fade" id="modalHotline" tabindex="-1" role="dialog" aria-labelledby="modalHotlineLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHotlineLabel">Liên hệ với chúng tôi </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: wheat; padding: 20px; padding-bottom:40px">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tuan-call">
+                <a href="{{$setting->facebook}}">
+                    <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
+                </a>
+                </div>
+            </div>
+             <div class="col-md-12" style="margin-top: 10px">
+                @php
+                    $phone = json_decode($setting->phone2,true);
+                    // dd($zalo);
+                @endphp
+                <div class="tuan-call">
+                @foreach ($phone as $key => $item)
+                    <a href="tel:{{ $item }}">
+                   <img src="{{ asset('frontend/images/icons8-phone-100.png') }}" alt="" srcset="" style="width: 44px; height:44px" >
+                   <span class="ten-zalo">{{$item}}</span>
+
+                </a>
+                
+                @endforeach
+            </div>
+            </div>
+           
+            <div class="col-md-12" style="margin-top: 20px">
+                @php
+                    $zalo2 = json_decode($setting->google,true);
+                    // dd($zalo);
+                @endphp
+                <div class="tuan-call">
+                @foreach ($zalo2 as $key => $item)
+                    <a href="https://zalo.me/{{$item}}">
+                   <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
+                   <span class="ten-zalo">{{$item}}</span>
+
+                </a>
+                
+                @endforeach
+            </div>
+            </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</div>
       <script>
          $(document).ready(function($) {
          
@@ -4361,9 +3971,6 @@
              head.appendChild(script);
          });
       </script>
-      {{-- <script id="omiLiveTalk" type="text/javascript" src="https://cdn.omicrm.com/script/livetalk/main.js#domain=nhudungsgt;"></script> --}}
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
-         nonce="OuJyLkes"></script>
       <style>
          .footer-fb {
          margin-bottom: 50px;
@@ -4391,31 +3998,27 @@
              });
          });
       </script>
-      <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
       <div class="floating-buttons">
-        <a href="{{$setting->google}}" class="floating-button viewed-button" title="Liên hệ qua Zalo"
+        {{-- <a href="{{$setting->google}}" class="floating-button viewed-button" title="Liên hệ qua Zalo"
             >
          <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
          <span class="tooltip-text">Liên hệ qua Zalo</span>
-         </a>
-         <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
+         </a> --}}
+         {{-- <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
             >
          <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
-         <span class="tooltip-text">Liên hệ qua mess</span>
-         </a>
+         <span class="tooltip-text">Liên hệ</span>
+         </a> --}}
          <a href="{{ route('compareList') }}" class="floating-button compare-button" title="So sánh">
          <i class="fa fa-retweet" aria-hidden="true" style="color: white"></i>
          <span class="tooltip-text">So sánh</span>
          </a>
-         <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
          <a href="javascript:void(0)" class="floating-button viewed-button" title="Sản phẩm đã xem"
             data-toggle="modal" data-target="#recentlyViewedModal">
          <i class="fa fa-eye" aria-hidden="true" style="color: white"></i>
          <span class="tooltip-text">Sản phẩm đã xem</span>
          </a>
       </div>
-      <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
-      <!-- filepath: c:\laragon\www\yumy\resources\views\layouts\main\master.blade.php -->
       <div class="modal fade modal-dialog-tuan" id="recentlyViewedModal" tabindex="-1" role="dialog"
          aria-labelledby="recentlyViewedModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-tuan modal-lg-tuan" role="document"

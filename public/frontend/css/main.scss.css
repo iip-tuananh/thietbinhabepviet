@@ -4515,8 +4515,8 @@ li.addThis_item img {
 
 .addThis_phone {
     position: fixed;
-    left: -5px;
-    bottom: 60px;
+    right: 39px;
+    bottom: 202px;
 }
 
 .addThis_phone a {
@@ -8073,4 +8073,31 @@ header a{
 }
 .menu-scroll{
       transform: translateX(21px);
+}
+.ten-zalo{
+    background-color: #00704c;
+    color: white;
+    font-size: 11px;
+    border-radius: 8px;
+    /* padding: 0px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    bottom: -14px;
+    margin-left: -62px;
+    /* left: 14px; */
+}
+.tuan-call{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 420px) {
+  .ten-zalo {
+    display: none !important;
+  }
+
 }

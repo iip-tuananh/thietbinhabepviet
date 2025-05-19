@@ -31,9 +31,6 @@ Tin tức cập nhật
 </section>
 <section class="blogpage section">
    <div class="containers" itemscope="" itemtype="https://schema.org/Blog">
-      <meta itemprop="name" content="">
-      <meta itemprop="description"
-         content="Đến với Kho Điện Máy SGT, chúng tôi cam kết mang tới khách hàng những sản phẩm chính hãng, mới 100%, bảo hành tại nhà, và đặc biệt hơn nữa, SGT luôn cam kết gửi tới quý khách hàng chính sách giá tốt nhất miền Bắc.">
       <div class="wrap_background_aside margin-bottom-0">
          <div class="container">
             <div class="row">

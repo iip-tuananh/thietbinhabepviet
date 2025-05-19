@@ -74,7 +74,7 @@
                    <a href="{{route('home')}}" class="logo-wrapper mb-3 d-block tuan-ft-logo " >	
                    <img loading="lazy"
                        class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="{{$setting->logo}}" 
-                       alt="logo Công Ty TNHH Thiết Bị SGT"
+                       alt="{{$setting->company}}"
                        width="362" 
                        height="100%">
                    </a>
