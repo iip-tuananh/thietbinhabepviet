@@ -3883,84 +3883,36 @@
          <link href='{{ asset('frontend/css/addthis-sharing.css') }}' rel='stylesheet' type='text/css'
          media='all' />
       </noscript>
-      <div class="addThis_listSharing ">
-         <a href="#" id="back-to-top"
-            class="backtop back-to-top d-flex align-items-center justify-content-center" title="Lên đầu trang">
-         <i class="fa fa-chevron-up" aria-hidden="true" style="color: white;    font-size: 16px;"></i>
+      @php
+          $phone = json_decode($setting->phone2);
+          $zalo = json_decode($setting->google);
+      @endphp
+      <div class="moda-call" >
+        <div style="margin-bottom: 10px">
+            <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
+            >
+         <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
+         <span class="tooltip-text">Liên hệ</span>
          </a>
-         <ul class="addThis_listing list-unstyled">
-            <li class="addThis_item addThis_phone">
-               <div class="phone-vr-circle-fill"></div>
-               <a class="addThis_item--icon" 
-   href="javascript:void(0)" 
-   rel="nofollow"
-   data-toggle="modal" 
-   data-target="#modalHotline">
-   <img class="img-fluid" src="{{ asset('frontend/images/icons8-phone-100.png') }}"
-      alt="Gọi ngay cho chúng tôi" loading="lazy" width="88" height="88" />
-   <span class="tooltip-text">Gọi ngay cho chúng tôi</span>
-</a>
-            </li>
-         </ul>
-      </div>
-      <!-- Modal Hotline -->
-<div class="modal fade" id="modalHotline" tabindex="-1" role="dialog" aria-labelledby="modalHotlineLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalHotlineLabel">Liên hệ với chúng tôi </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Đóng">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" style="background-color: wheat; padding: 20px; padding-bottom:40px">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tuan-call">
-                <a href="{{$setting->facebook}}">
-                    <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
-                </a>
-                </div>
-            </div>
-             <div class="col-md-12" style="margin-top: 10px">
-                @php
-                    $phone = json_decode($setting->phone2,true);
-                    // dd($zalo);
-                @endphp
-                <div class="tuan-call">
-                @foreach ($phone as $key => $item)
-                    <a href="tel:{{ $item }}">
-                   <img src="{{ asset('frontend/images/icons8-phone-100.png') }}" alt="" srcset="" style="width: 44px; height:44px" >
-                   <span class="ten-zalo">{{$item}}</span>
-
-                </a>
-                
-                @endforeach
-            </div>
-            </div>
-           
-            <div class="col-md-12" style="margin-top: 20px">
-                @php
-                    $zalo2 = json_decode($setting->google,true);
-                    // dd($zalo);
-                @endphp
-                <div class="tuan-call">
-                @foreach ($zalo2 as $key => $item)
-                    <a href="https://zalo.me/{{$item}}">
-                   <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
-                   <span class="ten-zalo">{{$item}}</span>
-
-                </a>
-                
-                @endforeach
-            </div>
-            </div>
         </div>
-     
+        @foreach ($zalo as $item)
+            <div style="margin-bottom: 10px">
+                <a href="https://zalo.me/{{$item}}" class="floating-button viewed-button" title="Liên hệ qua Zalo">
+                <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
+                <span class="tooltip-text">Liên hệ qua Zalo</span>
+                </a>
+            </div>
+        @endforeach
+            @foreach ($phone as $item)
+           <div style="margin-bottom: 10px">
+             
+                   <a href="tel:{{$item}}" class="floating-button viewed-button tuan-im" title="Liên hệ qua Zalo" style="background: #ffffff00 !important;">
+                <img src="{{ asset('frontend/images/icons8-phone-100.png') }}" alt="" srcset="">
+                <span class="tooltip-text">{{$item}}</span>
+                </a>
+            </div>
+            @endforeach
       </div>
-    </div>
-  </div>
-</div>
       <script>
          $(document).ready(function($) {
          
@@ -3999,16 +3951,8 @@
          });
       </script>
       <div class="floating-buttons">
-        {{-- <a href="{{$setting->google}}" class="floating-button viewed-button" title="Liên hệ qua Zalo"
-            >
-         <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
-         <span class="tooltip-text">Liên hệ qua Zalo</span>
-         </a> --}}
-         {{-- <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
-            >
-         <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
-         <span class="tooltip-text">Liên hệ</span>
-         </a> --}}
+       
+         
          <a href="{{ route('compareList') }}" class="floating-button compare-button" title="So sánh">
          <i class="fa fa-retweet" aria-hidden="true" style="color: white"></i>
          <span class="tooltip-text">So sánh</span>

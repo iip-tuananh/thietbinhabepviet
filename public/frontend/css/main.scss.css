@@ -8095,6 +8095,59 @@ header a{
     justify-content: space-around;
     align-items: center;
 }
+.moda-call{
+    position: fixed;
+    bottom: 203px;
+    z-index: 999;
+    top: auto !important;
+    right: 12px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.tuan-im img{
+    width: 44px !important;
+    height: 44px !important;
+}
+.tuan-im {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+.tuan-im::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 60px; height: 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(rgba(237, 49, 36, 0.658) 40%, transparent 70%);
+    animation: shine-pulse 1.5s infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+@keyframes shine-pulse {
+    0% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(237, 49, 36, 0.692);
+    }
+    70% {
+        opacity: 0.2;
+        transform: translate(-50%, -50%) scale(1.4);
+        box-shadow: 0 0 20px 10px rgba(237, 49, 36, 0.61);
+    }
+    100% {
+        opacity: 0.7;
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(237, 49, 36, 0.623);
+    }
+}
+
 @media (max-width: 420px) {
   .ten-zalo {
     display: none !important;

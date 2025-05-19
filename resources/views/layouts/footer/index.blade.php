@@ -104,7 +104,7 @@
                            <a class="link" title="{{$setting->phone1}}" href="tel:{{$setting->phone1}}">{{$setting->phone1}}</a>
                        </div>
                    </div>
-                   @if($setting->phone2 != null)
+                   {{-- @if($setting->phone2 != null)
                    <div class="single-contact">
                     <i class="fa fa-mobile-alt"></i>
                     <div class="content">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                        
-                   @endif
+                   @endif --}}
                    <div class="single-contact">
                        <i class="fa fa-envelope"></i>
                        <div class="content">
