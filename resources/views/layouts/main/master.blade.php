@@ -3889,7 +3889,7 @@
       @endphp
       <div class="moda-call" >
         <div style="margin-bottom: 10px">
-            <a href="{{$setting->facebook}}" class="floating-button viewed-button" title="Liên hệ qua messenger"
+            <a href="{{$setting->facebook}}" target="blank" class="floating-button viewed-button" title="Liên hệ qua messenger"
             >
          <img src="{{asset('frontend/images/mess.png')}}" alt="" srcset="">
          <span class="tooltip-text">Liên hệ</span>
@@ -3897,7 +3897,7 @@
         </div>
         @foreach ($zalo as $item)
             <div style="margin-bottom: 10px">
-                <a href="https://zalo.me/{{$item}}" class="floating-button viewed-button" title="Liên hệ qua Zalo">
+                <a href="https://zalo.me/{{$item}}" target="blank" class="floating-button viewed-button" title="Liên hệ qua Zalo">
                 <img src="{{asset('frontend/images/zalo.png')}}" alt="" srcset="">
                 <span class="tooltip-text">Liên hệ qua Zalo</span>
                 </a>
@@ -3906,7 +3906,7 @@
             @foreach ($phone as $item)
            <div style="margin-bottom: 10px">
              
-                   <a href="tel:{{$item}}" class="floating-button viewed-button tuan-im" title="Liên hệ qua Zalo" style="background: #ffffff00 !important;">
+                   <a href="tel:{{$item}}" class="floating-button viewed-button tuan-im"  title="Liên hệ qua Zalo" style="background: #ffffff00 !important;">
                 <img src="{{ asset('frontend/images/icons8-phone-100.png') }}" alt="" srcset="">
                 <span class="tooltip-text">{{$item}}</span>
                 </a>
