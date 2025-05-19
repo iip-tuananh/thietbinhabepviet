@@ -3906,7 +3906,7 @@
             @foreach ($phone as $item)
            <div style="margin-bottom: 10px">
              
-                   <a href="tel:{{$item}}" class="floating-button viewed-button tuan-im"  title="Liên hệ qua Zalo" style="background: #ffffff00 !important;">
+                   <a href="tel:{{$item}}" class="floating-button viewed-button tuan-im"  title="Liên hệ với chúng tôi" style="background: #ffffff00 !important;">
                 <img src="{{ asset('frontend/images/icons8-phone-100.png') }}" alt="" srcset="">
                 <span class="tooltip-text">{{$item}}</span>
                 </a>
