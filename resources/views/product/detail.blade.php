@@ -1501,7 +1501,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1514,7 +1514,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1639,7 +1639,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1652,7 +1652,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1783,7 +1783,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1796,7 +1796,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2024,7 +2024,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2037,7 +2037,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2168,7 +2168,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2181,7 +2181,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2587,7 +2587,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2600,7 +2600,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -2925,7 +2925,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -2938,7 +2938,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3166,7 +3166,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3179,7 +3179,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3310,7 +3310,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3323,7 +3323,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3448,7 +3448,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3461,7 +3461,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3592,7 +3592,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3605,7 +3605,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3730,7 +3730,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3743,7 +3743,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -3874,7 +3874,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -3887,7 +3887,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4115,7 +4115,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4128,7 +4128,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4259,7 +4259,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4272,7 +4272,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -4678,7 +4678,7 @@
                   
                   
                   
-                  <li><a href="{{route('home'}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href=""><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -4691,7 +4691,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home'}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href=""><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
