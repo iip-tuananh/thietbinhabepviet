@@ -208,8 +208,7 @@
                                                     @if ($product->discount > 0 && $phantram > 0 && $product->status_variant != 1)
                                                         <div class="price-box">
                                                             <span class="special-price"><span
-                                                                    class="price product-price bk-product-price"
-                                                                    >{{ number_format($product->discount, 0, ',', '.') }}₫</span>
+                                                                    class="price product-price bk-product-price">{{ number_format($product->discount, 0, ',', '.') }}₫</span>
                                                             </span> <!-- Giá Khuyến mại -->
                                                             <span class="old-price">
                                                                 <del
@@ -246,10 +245,10 @@
                                                                 width='16' height='16' class='mr-2' />
                                                             KHUYẾN MÃI - ƯU ĐÃI
                                                         </h3>
-                                                        <div class="">{!!languageName($product->description)!!}</div>
+                                                        <div class="">{!! languageName($product->description) !!}</div>
                                                         <ul class="promotion-box">
-                                                        
-                                                            
+
+
                                                             @foreach ($khuyenmai as $item)
                                                                 <li>
                                                                     {{ $item->detail }}
@@ -314,7 +313,7 @@
                                                                 <button type="submit"
                                                                     class="btn btn_base buynow detail_add_to_cart btn_add_cart"
                                                                     data-id="{{ $product->id }}">
-                                                                    THÊM VÀO GIỎ HÀNG<span>Giao hàng tận nơi hoặc nhận tại
+                                                                    THÊM VÀO GIỎ HÀNG <span>Giao hàng tận nơi hoặc nhận tại
                                                                         cửa
                                                                         hàng</span>
                                                                 </button>
@@ -834,7 +833,7 @@
                   
                   
                   
-                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{ route('home') }}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -847,7 +846,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href="{{ route('home') }}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1075,7 +1074,7 @@
                   
                   
                   
-                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{ route('home') }}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1088,7 +1087,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href="{{ route('home') }}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1219,7 +1218,7 @@
                   
                   
                   
-                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{ route('home') }}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1232,7 +1231,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt </u></i><br></a></li>
+                  <a target="_blank" href="{{ route('home') }}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt </u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -1357,7 +1356,7 @@
                   
                   
                   
-                  <li><a href="{{route('home')}}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
+                  <li><a href="{{ route('home') }}"><span style="font-size:16px">Chương trình của hãng Trả góp lãi suất <strong><span style="color:#e74c3c">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút </span><span style="font-size:12px">&lt;Chỉ áp dụng với Sản phẩm TV, Tủ lạnh, Máy giặt, Điều hòa của LG và Samsung&gt;</span></a></li>
                   
                   
                   
@@ -1370,7 +1369,7 @@
                   
                   
                   <li>Giá bán tại kho (chưa bao gồm phí vận chuyển và lắp đặt)
-                  <a target="_blank" href="{{route('home')}}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
+                  <a target="_blank" href="{{ route('home') }}"><br><i><u>Chính Sách Vận Chuyển - Lắp Đặt</u></i><br></a></li>
                   </ul>
                   </div>
                   
@@ -5462,6 +5461,22 @@
             // Đếm số nhóm variant có trong sản phẩm
             const totalVariantGroups = document.querySelectorAll('.box-variant').length;
 
+            // Nếu KHÔNG có variant, hiển thị giá mặc định ngay
+            if (totalVariantGroups === 0) {
+                const priceDisplay = document.getElementById('variant-price');
+                if (priceDisplay) {
+                    @if($product->price > 0)
+                        priceDisplay.textContent = "{{ number_format($product->price, 0, ',', '.') }}₫";
+                        if (variantPriceHidden) variantPriceHidden.value = "{{ $product->price }}";
+                    @else
+                        priceDisplay.textContent = "Đang cập nhật giá";
+                        if (variantPriceHidden) variantPriceHidden.value = "";
+                    @endif
+                }
+                // Không cần xử lý variant tiếp nữa
+                return;
+            }
+
             // Tự động chọn giá trị đầu tiên của mỗi nhóm khi trang được tải
             document.querySelectorAll('.box-variant').forEach(box => {
                 const firstButton = box.querySelector('.variant-btn');
@@ -5491,7 +5506,7 @@
                         // Chỉ cho phép bỏ chọn khi có variant khác đã được chọn trong cùng nhóm
                         const activeVariantsInGroup = document.querySelectorAll(
                             `.box-variant[data-variant-group="${variantGroup}"] .variant-btn.active`
-                            );
+                        );
 
                         // Nếu chỉ có một variant active trong nhóm, không cho phép bỏ chọn
                         if (activeVariantsInGroup.length <= 1) {
@@ -5527,7 +5542,7 @@
             // Hàm cập nhật input ẩn với chuỗi kết hợp
             function updateSelectedVariantInput() {
                 const combinedVariant = Object.values(selectedVariants).join(
-                '-'); // Kết hợp các giá trị bằng dấu "-"
+                    '-'); // Kết hợp các giá trị bằng dấu "-"
                 selectedVariantInput.value = combinedVariant; // Gán giá trị vào input ẩn
                 console.log('Selected Variants:', selectedVariants);
                 console.log('Combined Value:', combinedVariant);
@@ -5597,47 +5612,44 @@
             }
 
             // Hàm gửi AJAX để lấy giá
-            // ...existing code...
-// Hàm gửi AJAX để lấy giá
-function fetchPrice(selectedVariants) {
-    const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
-    const productId = {{ $product->id }}; // Lấy id sản phẩm từ blade
+            function fetchPrice(selectedVariants) {
+                const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+                const productId = {{ $product->id }}; // Lấy id sản phẩm từ blade
 
-    fetch("/get-price", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "X-CSRF-TOKEN": csrfToken
-        },
-        body: JSON.stringify({
-            product_id: productId, // Gửi thêm id sản phẩm
-            options: Object.values(selectedVariants) // Gửi các giá trị đã chọn
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        const priceDisplay = document.getElementById('variant-price');
-        if (data.success) {
-            const formattedPrice = new Intl.NumberFormat('vi-VN', {
-                style: 'currency',
-                currency: 'VND',
-                maximumFractionDigits: 0
-            }).format(data.price);
+                fetch("/get-price", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "X-CSRF-TOKEN": csrfToken
+                        },
+                        body: JSON.stringify({
+                            product_id: productId, // Gửi thêm id sản phẩm
+                            options: Object.values(selectedVariants) // Gửi các giá trị đã chọn
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        const priceDisplay = document.getElementById('variant-price');
+                        if (data.success) {
+                            const formattedPrice = new Intl.NumberFormat('vi-VN', {
+                                style: 'currency',
+                                currency: 'VND',
+                                maximumFractionDigits: 0
+                            }).format(data.price);
 
-            if (priceDisplay) priceDisplay.textContent = formattedPrice;
-            if (variantPriceHidden) variantPriceHidden.value = data.price;
-        } else {
-            if (priceDisplay) priceDisplay.textContent = "Đang cập nhật giá";
-            if (variantPriceHidden) variantPriceHidden.value = "";
-        }
-    })
-    .catch(error => {
-        console.error("Lỗi:", error);
-        const priceDisplay = document.getElementById('variant-price');
-        if (priceDisplay) priceDisplay.textContent = "Đang cập nhật giá";
-    });
-}
-// ...existing code...
+                            if (priceDisplay) priceDisplay.textContent = formattedPrice;
+                            if (variantPriceHidden) variantPriceHidden.value = data.price;
+                        } else {
+                            if (priceDisplay) priceDisplay.textContent = "Đang cập nhật giá";
+                            if (variantPriceHidden) variantPriceHidden.value = "";
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Lỗi:", error);
+                        const priceDisplay = document.getElementById('variant-price');
+                        if (priceDisplay) priceDisplay.textContent = "Đang cập nhật giá";
+                    });
+            }
 
             // Thêm CSS cho các phần tử bắt buộc
             const style = document.createElement('style');
@@ -5670,7 +5682,8 @@ function fetchPrice(selectedVariants) {
                     if (selectedCount < totalVariantGroups) {
                         e.preventDefault();
                         alert(
-                            `Vui lòng chọn đủ ${totalVariantGroups} tùy chọn sản phẩm trước khi thêm vào giỏ hàng.`);
+                            `Vui lòng chọn đủ ${totalVariantGroups} tùy chọn sản phẩm trước khi thêm vào giỏ hàng.`
+                            );
                         return false;
                     }
                 });
@@ -5755,17 +5768,17 @@ function fetchPrice(selectedVariants) {
 
                                 // Cập nhật số lượng sản phẩm trong giỏ hàng
                                 const cartCountElements = document.querySelectorAll('.count_item_pr');
-                                 fetch('{{ route('cart.sidebar') }}')
-                            .then(response => response.text())
-                            .then(html => {
-                                // Cập nhật nội dung giỏ hàng
-                                document.getElementById('cart-sidebar').innerHTML = html;
-                            })
-                            .catch(error => console.error('Lỗi khi cập nhật giỏ hàng:', error));
+                                fetch('{{ route('cart.sidebar') }}')
+                                    .then(response => response.text())
+                                    .then(html => {
+                                        // Cập nhật nội dung giỏ hàng
+                                        document.getElementById('cart-sidebar').innerHTML = html;
+                                    })
+                                    .catch(error => console.error('Lỗi khi cập nhật giỏ hàng:', error));
                                 if (cartCountElements.length > 0) {
                                     cartCountElements.forEach(element => {
                                         element.textContent = data
-                                        .cartCount; // Cập nhật số lượng từ server
+                                            .cartCount; // Cập nhật số lượng từ server
                                     });
 
                                 }
