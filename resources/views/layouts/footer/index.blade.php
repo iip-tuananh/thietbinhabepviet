@@ -162,12 +162,12 @@
                        <a class='text-primary font-weight-bold' href='tel:{{$setting->phone1}}'>{{$setting->phone1}}</a>
                        <span> (07h30-21h30) </span>
                    </p>
-                   <p>
+                   {{-- <p>
                        <span>
                        Khiếu Nại Dịch Vụ: </span>
                        <a class='text-primary font-weight-bold' href='tel:{{$setting->phone2}}'>{{$setting->phone2}}</a>
                        <span> (07h30-21h30) </span>
-                   </p>
+                   </p> --}}
                    <div class="footer-fb mt-3">
                      {!!$setting->iframe_map  !!}
                    </div>
