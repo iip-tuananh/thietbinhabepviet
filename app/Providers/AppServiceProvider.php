@@ -58,7 +58,7 @@ class AppServiceProvider extends ServiceProvider
                     $query->with(['typetwo'])->where('status',1)->orderBy('id','ASC')->select('cate_id','id', 'name','avatar','slug','cate_slug');
                 }
             ])->where('status',1)->orderBy('link_demo','ASC')->get(['id','name','imagehome','avatar','slug','content','link_demo'])->map(function ($query) {
-                $query->setRelation('product', $query->product->take(10));
+                $query->setRelation('product', $query->product->take(100));
                 return $query;
             });
 

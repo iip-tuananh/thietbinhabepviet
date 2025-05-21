@@ -217,8 +217,7 @@
                                                             <div class="label_product">
                                                                 -{{ round($phantram) }}%
                                                             </div>
-                                                            <span class="vat">Giá đã bao gồm VAT (Không bao gồm gia
-                                                                dụng)</span>
+                                                         
                                                         </div>
                                                     @else
                                                         <div class="price-box">
