@@ -22,20 +22,8 @@
                 <TinyMce v-model="objData.content" :class="{ 'is-invalid': submitted && $v.objData.content.$error }" />
                 <div v-if="submitted && !$v.objData.content.required" class="noti-err">Nội dung không để trống</div>
               </div>
-              <div class="form-group">
-                <label>Mô tả ngắn</label>
-                <TinyMce v-model="objData.description" :class="{ 'is-invalid': submitted && $v.objData.description.$error }" />
-                <div v-if="submitted && !$v.objData.description.required" class="noti-err">Nội dung không để trống</div>
-              </div>
-              <div class="form-group">
-                <label>Ảnh đại diện</label>
-                <image-upload
-                  :oldImage="objData.image"
-                  v-model="objData.image"
-                  type="avatar"
-                  :title="'trang-noi-dung'"
-                ></image-upload>
-              </div>
+           
+           
               <vs-button color="primary" @click="addPagecontent">Lưu</vs-button>
             </div>
           </div>

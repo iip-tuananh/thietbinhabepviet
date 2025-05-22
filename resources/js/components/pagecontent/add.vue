@@ -22,10 +22,10 @@
                 <TinyMce v-model="objData.content" :class="{ 'is-invalid': submitted && $v.objData.content.$error }" />
                 <div v-if="submitted && !$v.objData.content.required" class="noti-err">Nội dung không để trống</div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Mô tả ngắn</label>
                 <TinyMce v-model="objData.description" :class="{ 'is-invalid': submitted && $v.objData.description.$error }" />
-                <div v-if="submitted && !$v.objData.description.required" class="noti-err">Nội dung không để trống</div>
+                <div v-if="submitted && !$v.objData.description.required" class="noti-err">Mô tả ngắn không để trống</div>
               </div>
               <div class="form-group">
                 <label>Ảnh đại diện</label>
@@ -34,7 +34,8 @@
                   type="avatar"
                   :title="'trang-noi-dung'"
                 ></image-upload>
-              </div>
+                <div v-if="submitted && !$v.objData.image.required" class="noti-err">Vui lòng chọn ảnh đại diện</div>
+              </div> -->
               <vs-button color="primary" @click="addPagecontent">Thêm mới</vs-button>
             </div>
           </div>
@@ -59,19 +60,6 @@
                       <vs-select-item  value="ho-tro-khanh-hang" text="Hỗ trợ khách hàng" />   
                     </vs-select>
               </div>
-              <!-- <div class="form-group">
-                <label>Danh muc</label>
-                <vs-select class="selectExample" v-model="objData.category" placeholder="Danh mục">
-                  <vs-select-item
-                    :value="item.id"
-                    :text="item.name"
-                    v-for="(item,index) in cate"
-                    :key="'f'+index"
-                  />
-                </vs-select>
-                <div v-if="submitted && !$v.objData.category.required" class="noti-err">Chọn tối thiểu 1 ảnh</div>
-              </div> -->
-              
             </div>
           </div>
         </div>
@@ -80,7 +68,6 @@
     <!-- content-wrapper ends -->
   </div>
 </template>
-
 
 <script>
 import { mapActions } from "vuex";
@@ -95,9 +82,9 @@ export default {
       objData: {
         title: "",
         content: "",
-        description: "",
+        // description: "",
         status: 1,
-        image:"",
+        // image:"",
         type:'ve-chung-toi'
       }
     };
@@ -105,8 +92,9 @@ export default {
   validations: {
     objData: {
       title: { required },
-      description: { required },
-      content: { required },
+      content: { required }
+      // description: { required },
+      // image: { required }
     }
   },
   components: {
