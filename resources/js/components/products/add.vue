@@ -296,7 +296,7 @@
                 >
               </div>
               <div class="form-group">
-                <label>Sản phẩm nổi bật</label>
+                <label>Sản phẩm giảm giá</label>
                 <vs-select v-model="objData.discountStatus">
                   <vs-select-item value="1" text="Có" />
                   <vs-select-item value="0" text="Không" />

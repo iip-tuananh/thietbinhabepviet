@@ -29,7 +29,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>Mô tả ngắn</label>
+                <label>Mô tả ngắn phần khuyến mãi trang chi tiết</label>
                 <vs-textarea v-model="objData.description[0].content" />
                 <el-button size="small" @click="showSettingLangExist('description')">Đa ngôn ngữ</el-button>
                  <div class="dropLanguage" v-if="showLang.description == true">
