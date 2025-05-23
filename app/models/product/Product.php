@@ -59,6 +59,7 @@ class Product extends Model
                     $query->discount = $request->discount != null ? $request->discount : 0;
                     $query->images = json_encode($request->images);
                     $query->description = json_encode($request->description);
+                    $query->km = json_encode($request->km);
                     $query->content = json_encode($request->content);
                     $query->size = json_encode($request->size);
                     $query->variant = json_encode($request->variant);
@@ -108,6 +109,7 @@ class Product extends Model
                 $query->description = json_encode($request->description);
                 $query->content = json_encode($request->content);
                 $query->size = json_encode($request->size);
+                $query->km = json_encode($request->km);
                 $query->category = $request->category;
                 $query->tags = json_encode($request->tags);
                 $query->type_two = $request->type_two;
@@ -155,7 +157,7 @@ class Product extends Model
         $query = new Product();
         $query->name = toArrayLanguage($request->name);
         $query->slug = to_slug($request->name[0]['content']);
-
+        $query->km = toArrayLanguage($request->km);
         $query->description = toArrayLanguage($request->description);
         $query->uses = toArrayLanguage($request->uses);
         $query->relationship = $request->relationship;

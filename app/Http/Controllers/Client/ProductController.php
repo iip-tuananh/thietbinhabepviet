@@ -41,7 +41,7 @@ class ProductController extends Controller
             'cate' => function ($query) {
                 $query->where('status', 1)->limit(5)->select('id', 'name', 'avatar', 'slug');
             },
-        ])->where('slug', $id)->first(['id', 'name', 'images', 'type_cate', 'category', 'sku', 'discount', 'price', 'content', 'size', 'description', 'slug', 'preserve', 'status_variant', 'created_at', 'species', 'variant', 'cate_slug', 'type_slug','status']);
+        ])->where('slug', $id)->first(['id', 'name', 'images', 'type_cate', 'category', 'sku', 'discount', 'price', 'content', 'size', 'description', 'slug', 'preserve', 'status_variant', 'created_at', 'species', 'variant', 'cate_slug', 'type_slug','status','km']);
         // session()->forget('viewoldpro'); 
         $oldProduct = session()->get('viewoldpro', []);
         if (!isset($oldProduct[$data['product']->id])) {
@@ -53,6 +53,7 @@ class ProductController extends Controller
                 'status_variant' => $data['product']->status_variant,
                 'price' => $data['product']->price,
                 'size' => $data['product']->size,
+                'km' => $data['product']->km,
                 'discount' => $data['product']->discount,
                 'cate_slug' => $data['product']->cate_slug,
                 'type_slug' => $data['product']->type_slug,

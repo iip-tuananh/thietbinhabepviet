@@ -217,7 +217,7 @@
                                                             <div class="label_product">
                                                                 -{{ round($phantram) }}%
                                                             </div>
-                                                         
+
                                                         </div>
                                                     @else
                                                         <div class="price-box">
@@ -319,7 +319,7 @@
                                                                 <div class="gr-detail-wrapper"
                                                                     style='display: flex; flex-wrap: wrap; width: 100%;align-items: center;'>
 
-                                                                    <a class="btn btn_tuvan" href="/pages/lien-he"
+                                                                    <a class="btn btn_tuvan" href="{{ route('lienHe') }}"
                                                                         target="_blank">
                                                                         <strong>Tư vấn</strong>
                                                                         <span>Chúng tôi sẽ gọi lại cho bạn</span>
@@ -351,24 +351,11 @@
                                                 </h2>
                                             </div>
                                             <div class='product_getcontent'>
-                                                <table>
-                                                    <tbody>
-                                                        @foreach ($thongso as $item)
-                                                            <tr>
-                                                                <td>
-                                                                    <p><span
-                                                                            style="color:#000000">{{ $item->title }}</span>
-                                                                    </p>
-                                                                </td>
-                                                                <td>
-                                                                    <p><a><span
-                                                                                style="color:#000000">&nbsp;{{ $item->detail }}</span></a>
-                                                                    </p>
-                                                                </td>
-                                                            </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
+                                                @if (!empty($product->km))
+                                                    {!! languageName($product->km) !!}
+                                                @else
+                                                Đang cập nhật ...
+                                                @endif
                                             </div>
                                             <div
                                                 class="ega-pro__seemore text-center pos-relative mt-3 js-show-specifications">
@@ -393,24 +380,11 @@
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <table>
-                                                                <tbody>
-                                                                    @foreach ($thongso as $item)
-                                                                        <tr>
-                                                                            <td>
-                                                                                <p><span style="color:#000000">{{ $item->title }}
-                                                                                        :</span>
-                                                                                </p>
-                                                                            </td>
-                                                                            <td>
-                                                                                <p><a><span
-                                                                                            style="color:#000000">&nbsp;{{ $item->detail }}</span></a>
-                                                                                </p>
-                                                                            </td>
-                                                                        </tr>
-                                                                    @endforeach
-                                                                </tbody>
-                                                            </table>
+                                                            @if (!empty($product->km))
+                                                                {!! languageName($product->km) !!}
+                                                                 @else
+                                                Đang cập nhật ...
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>
@@ -445,23 +419,11 @@
                                             </h2>
                                         </div>
                                         <div class='product_getcontent'>
-                                            <table>
-                                                <tbody>
-                                                    @foreach ($thongso as $item)
-                                                        <tr>
-                                                            <td>
-                                                                <p><span style="color:#000000">{{ $item->title }}</span>
-                                                                </p>
-                                                            </td>
-                                                            <td>
-                                                                <p><a><span
-                                                                            style="color:#000000">&nbsp;{{ $item->detail }}</span></a>
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                    @endforeach
-                                                </tbody>
-                                            </table>
+                                            @if (!empty($product->km))
+                                                {!! languageName($product->km) !!}
+                                                 @else
+                                                Đang cập nhật ...
+                                            @endif
                                         </div>
                                         <div class="ega-pro__seemore text-center pos-relative mt-3 js-show-specifications">
                                             <a href="javascript:void(0)" title="Xem thêm"
@@ -485,24 +447,11 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <table>
-                                                            <tbody>
-                                                                @foreach ($thongso as $item)
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p><span
-                                                                                    style="color:#000000">{{ $item->title }}</span>
-                                                                            </p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p><a><span
-                                                                                        style="color:#000000">&nbsp;{{ $item->detail }}</span></a>
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                @endforeach
-                                                            </tbody>
-                                                        </table>
+                                                        @if (!empty($product->km))
+                                                            {!! languageName($product->km) !!}
+                                                             @else
+                                                Đang cập nhật ...
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
@@ -5137,71 +5086,6 @@
         }
     </script>
     <script>
-        var productDetail = {
-            "available": true,
-            "compare_at_price_max": 11889000000.0,
-            "compare_at_price_min": 11889000000.0,
-            "compare_at_price_varies": false,
-            "compare_at_price": 11889000000.0,
-            "content": null,
-            "description": "<ul><li>Bảng màu sống động, phong phú từ công nghệ Dynamic QNED Color hoàn toàn mới.</li><li>Chất lượng hình ảnh 4K. Nâng cấp hình ảnh và âm thanh vòm nhờ Bộ xử lý AI alpha 8 Gen 2.</li><li>Nút bấm AI mới, điều khiển giọng nói, chức năng kéo thả trên điều khiển AI Magic.</li><li>Chi tiết sắc nét, hình ảnh rõ ràng từ Công nghệ Precision Dimming.</li><li>Độ phân giải vượt trội trên màn hình Ultra Big TV khổng lồ lên đến 100 inches.</li></ul><div>####</div><div><h3><strong>Tái tạo Sắc màu thực, Sống động Trải nghiệm mới</strong></h3></div><div><p style=\"text-align: center\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-06_at_16.15.12_dcdd1ac4_grande.jpg\"></p><h2>Choáng ngợp với TV Màn hình lớn lên đến 100 inches cùng&nbsp;Thiết kế siêu mỏng</h2><p>Màn hình siêu lớn mở ra thế giới phim ảnh, thể thao, trò chơi mãn nhãn trên LG Ultra Big TV. Cùng đắm mình trong độ phân giải sắc nét vượt trội và khung hình choáng ngợp. Viền mỏng tinh tế cho không gian sống nâng tầm.</p><p style=\"text-align: center\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-06_at_16.21.37_6ca44db6_grande.jpg\"></p><h3><strong>Giá đỡ Synergy chuyên biệt</strong></h3><p>Giá đỡ Synergy cố định hoàn hảo Loa thanh LG của bạn, đảm bảo chất âm tối ưu, quyện hòa trong thiết kế liền mạch.</p><p style=\"text-align: center\"><img src=\"//file.hstatic.net/200000574527/file/videoframe_6176_grande.png\"></p><h3><strong>Bung sắc rực rỡ với Dynamic QNED Color Pro mới</strong></h3><p>Chìm đắm vào sắc màu sống động như thật với công nghệ dải màu rộng độc quyền mới từ LG.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/m_u_s_c_grande.jpg\"></p><h3><strong>Đột phá công nghệ MiniLED từ bộ xử lý AI alpha mới</strong></h3><p>Nâng tầm độ sáng hình ảnh với độ chi tiết ấn tượng, độ tương phản vượt trội và khả năng tái tạo chính xác nhờ MiniLED và công nghệ Precision Dimming.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/ai_alpha_grande.jpg\"></p><h3><strong>Bộ xử lý AI alpha MỚI - Kết tinh từ một thập kỉ đổi mới, nhanh hơn, thông minh hơn</strong></h3><p>Bộ xử lý AI tiên tiến nhận diện nội dung theo từng thể loại, từ đó tối ưu chất lượng hình ảnh, mang đến chiều sâu và chi tiết vượt trội.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/ai_alpha_2_grande.jpg\"></p><h3><strong>Công nghệ AI Picture Pro mang cả thế giới đến trước mắt bạn</strong></h3><p>Công nghệ AI Super Upscaling kết hợp với Dynamic Tone Mapping Pro phân tích từng yếu tố trong mỗi khung hình, tối ưu độ phân giải, độ sáng, chiều sâu và độ rõ nét.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/ai_pro_grande.png\"></p><h3><strong>TV LG AI Thế hệ tiếp theo</strong></h3><p>Trải nghiệm trọn vẹn với AI Magic Remote và nút AI chuyên biệt</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/ai_control_grande.png\"></p><p><strong>Trải nghiệm cá nhân hóa cùng AI Voice ID</strong></p><p>LG AI Voice ID nhận diện giọng nói đặc trưng và mang đến trải nghiệm được thiết kế riêng ngay từ giây phút bạn mở TV và nói.</p><p><strong>Tra cứu liền tay, có ngay AI Search</strong></p><p>Chỉ cần đặt câu hỏi, trí tuệ giọng nói kích hoạt bởi AI sẽ thấu hiểu mọi nhu cầu của bạn và nhanh chóng đưa ra câu trả lời cá nhân hóa theo yêu cầu. Khám phá thêm kết quả và giải pháp tối ưu với Microsoft Copilot.</p><p><strong>Hỏi đáp tức thì với trợ lý thông minh AI Chatbot</strong></p><p>Tương tác với AI Chatbot qua AI Magic Remote để giải đáp mọi thắc mắc, từ cài đặt đến khắc phục sự cố. TV sẽ thấu hiểu bạn và phản hồi tức thì.</p><p><strong>AI Concierge - Đề xuất thông minh, trải nghiệm trọn vẹn</strong></p><p>Chỉ một lần nhấn nút AI, cả thế giới nội dung mở ra theo cách riêng của bạn. AI Concierge không chỉ ghi nhớ lịch sử tìm kiếm mà còn tinh chỉnh từ khóa, đề xuất những nội dung bạn yêu thích nhất, giúp trải nghiệm giải trí trở nên trọn vẹn hơn bao giờ hết.</p><p><strong>Hình ảnh chuẩn gu với AI Picture Wizard</strong></p><p>Thuật toán thông minh nắm bắt sở thích của bạn từ việc sàng lọc 1,6 tỷ lựa chọn hình ảnh. Từ đó tạo nên trải nghiệm hiển thị riêng biệt, độc bản từng khung hình.</p><p><strong>Âm thanh chọn lọc với AI Sound Wizard</strong></p><p>Chọn thanh âm đúng ý từ bộ sưu tập 40 triệu thông số đa dạng, AI sẽ tinh chỉnh và tạo nên chất âm chuẩn gu nghe của bạn.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/screenshot_2025-05-05_114700_grande.png\"></p><p><strong>Nâng cấp thường niên, đón đầu xu hướng với webOS Re:New Program chinh phục giải thưởng danh giá</strong></p><p>Đón đầu trải nghiệm với những tính năng và phần mềm mới nhất được nâng cấp hằng năm. Được vinh danh tại Giải thưởng Sáng tạo CES trong hạng mục an ninh mạng, webOS mang đến sự an tâm với khả năng bảo vệ dữ liệu và quyền riêng tư tuyệt đối.</p><h3><strong>AI Sound Pro tinh chỉnh âm thanh, nâng tầm trải nghiệm</strong></h3><p><strong>Bao trọn không gian với âm thanh vòm ảo 9.1.2 tuyệt hảo</strong></p><p>Đầm chìm trong âm thanh bao trùm không gian chỉ với TV LG. Al ứng dụng thuật toán nghiên cứu sâu để tai tạo hiệu ửng âm thanh lan tòa từ âm thanh vòm 9.1.2, mang đến cảm giác chân thực như đang hiện diện trong không gian hòa nhạc đa chiều.</p><p><strong>Âm thanh rõ nét, chân thực mê say cùng Al Clear Sound</strong></p><p>Hiệu chỉnh âm sắc chính xác, mang đến tinh hoa trải nghiệm thanh âm.</p><p><strong>Nâng tầm thanh âm mạnh mẽ với Dynamic Sound Booster từ bộ&nbsp;xử lý Al</strong></p><p>Công nghệ Al tối ưu, mang đến trải nghiệm âm thanh mạnh mẽ và đầy uy lực.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/ai_sound_grande.jpg\"></p><p><strong>Làm chủ âm thanh với WOW Interface</strong></p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-05_at_12.44.10_41632a6d_grande.jpg\"></p><p><strong>Âm thanh sống động, bay bổng quyện hòa cùng WOW Orchestra.</strong></p><p>Cặp đôi hoàn hảo TV LG QNED và Loa thanh LG phối hợp nhịp nhàng, tái tạo không gian âm thanh vòm tuyệt đình, tựa như hòa nhạc ba chiều sống động.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-05_at_13.32.48_4af34ef1_grande.jpg\"></p><h3><strong>Trải nghiệm đỉnh cao, thăng hoa game thủ</strong></h3><p>Trải nghiệm đỉnh cao gaming với 144Hz VRR và AMD FreeSync Premium. Thoả sức chinh phục trận đấu mà không lo giật lag hay nhòe chuyển động.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-05_at_13.38.16_6f422b94_grande.jpg\"></p><h3><strong>Tuyệt tác TV QNED cho thước phim tuyệt đỉnh</strong></h3><p>Biến ngôi nhà thành rạp chiếu phim sống động với âm thanh cuốn hút và FILMMAKER MODE tự động điều chỉnh theo ánh sáng môi trường, mang đến chất lượng hình ảnh chuẩn điện ảnh.</p><p style=\"text-align: center;\"><img src=\"//file.hstatic.net/200000574527/file/whatsapp_image_2025-05-05_at_13.43.06_f553c862_grande.jpg\"></p><h3><strong>Dolby Vision &amp; Ambient FILMMAKER MODE</strong></h3><p>Thưởng thức điện ảnh tuyệt đỉnh tại rạp chiếu tại gia với FILMMAKER MODE và Công nghệ Tinh chỉnh Độ Sáng tối ưu ánh sáng xung quanh, đem đến chất lượng hình ảnh chuẩn tiêu chí nhà làm phim hàng đầu.</p><p><strong>Dolby Atmos</strong></p><p>Âm thanh vòm sống động như đưa bạn vào không gian ba chiều của những trải nghiệm.</p></div><h6>Thông số kỹ thuật</h6><table><tbody><tr><td><p><span style=\"color:#000000\">Loại tivi :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;Smart Tivi QNED</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Kích cỡ màn hình :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;100&nbsp;inch</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Độ phân giải :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;4K</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Loại màn hình :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;4K QNED MiniLED</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Kết nối internet :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;Cổng LAN, Wifi</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Hệ điều hành, giao diện :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;webOS 25</span></a></p></td></tr><tr><td><p>Tần số quét</p></td><td><p>120Hz Cơ bản (VRR 144Hz)</p></td></tr><tr><td><p><span style=\"color:#000000\">Công nghệ xử lý hình ảnh :</span></p></td><td><p><a><span style=\"color:#000000\">Bộ xử lý α8 AI 4K thế hệ thứ 2</span></a></p><p><a><span style=\"color:#000000\">α8 AI Super Upscaling 4K</span></a></p><p><a><span style=\"color:#000000\">Dolby Vision</span></a></p><p><a><span style=\"color:#000000\">HDR10</span></a></p><p><a><span style=\"color:#000000\">HLG</span></a></p><p><a><span style=\"color:#000000\">Filmmaker</span></a></p><p><a><span style=\"color:#000000\">Dynamic Tone Mapping Pro</span></a></p><p><a><span style=\"color:#000000\">Precision Dimming Pro</span></a></p><p><a><span style=\"color:#000000\">AI Picture Pro</span></a></p><p><a><span style=\"color:#000000\">Motion Pro</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Công nghệ âm thanh :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;Dolby Atmos</span></a></p><p><a><span style=\"color:#000000\">Sound Mode Share</span></a></p><p><a><span style=\"color:#000000\">Điều chỉnh âm thanh AI</span></a></p><p><a><span style=\"color:#000000\">α8 AI Sound Pro</span></a></p><p><a><span style=\"color:#000000\">Clear Voice Pro</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Tổng công suất loa :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;40 W</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Kích thước có chân, đặt bàn :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;2230 x 1372/1324 x 434 mm</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Khối lượng có chân :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;75.6&nbsp;kg</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Kích thước không chân, treo tường :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;2230 x 1277 x 49.9 mm</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Khối lượng không chân :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;65.9 kg</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Nơi sản xuất :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;Đang cập nhật</span></a></p></td></tr><tr><td><p><span style=\"color:#000000\">Năm ra mắt :</span></p></td><td><p><a><span style=\"color:#000000\">&nbsp;2025</span></a></p></td></tr></tbody></table><p>####</p><ul><li><span style=\"font-size:16px\">Trả góp lãi suất <strong><span style=\"color:#e74c3c\">0%</span></strong>, duyệt hồ sơ nhanh trong 5 phút</span></li></ul>",
-            "featured_image": "https://product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_7f60e98b886340869ca2b69dfa39be2e.jpg",
-            "handle": "smart-tivi-lg-qned-evo-ai-miniled-4k-100-inch-100qned86as",
-            "id": 1067052590,
-            "images": [
-                "https://product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_7f60e98b886340869ca2b69dfa39be2e.jpg",
-                "https://product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_1_e2e9f13031334dd8a8ab6fe26a4b4fb1.jpg",
-                "https://product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_2_d477eb10a2cb4a3eac9307492c393afe.jpg"
-            ],
-            "options": ["Tiêu đề"],
-            "price": 9999000000.0,
-            "price_max": 9999000000.0,
-            "price_min": 9999000000.0,
-            "price_varies": false,
-            "tags": ["variant_4K - OLED", "100 inch", "variant_100 inch", "uudai3", "4K", "xuatxu_Indonesia", "new",
-                "variant_2025", "baohanh_24 tháng", "Tìm kiếm giọng nói bằng Tiếng Việt", "uudaichung"
-            ],
-            "template_suffix": null,
-            "title": "Smart Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS",
-            "type": "Tivi",
-            "url": "/products/smart-tivi-lg-qned-evo-ai-miniled-4k-100-inch-100qned86as",
-            "pagetitle": "Smart Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS",
-            "metadescription": "Smart Tivi LG QNED evo AI MiniLED 4K 100 inch 100QNED86AS giá tốt, chính hãng, giao hàng tận nơi, nhiều quà tặng hấp dẫn, bảo hành chu đáo. Click xem ngay!",
-            "variants": [{
-                "id": 1151942718,
-                "barcode": "100QNED86AS",
-                "available": true,
-                "price": 9999000000.0,
-                "sku": "100QNED86AS",
-                "option1": "100 Inch",
-                "option2": "",
-                "option3": "",
-                "options": ["100 Inch"],
-                "inventory_quantity": 0.0,
-                "old_inventory_quantity": 0.0,
-                "title": "100 Inch",
-                "weight": 0.0,
-                "compare_at_price": 11889000000.0,
-                "inventory_management": "haravan",
-                "inventory_policy": "continue",
-                "selected": false,
-                "url": null,
-                "featured_image": {
-                    "id": 1535638871,
-                    "created_at": "0001-01-01T00:00:00",
-                    "position": 1,
-                    "product_id": 1067052590,
-                    "updated_at": "0001-01-01T00:00:00",
-                    "src": "https://product.hstatic.net/200000574527/product/smart_tivi_lg_qned_evo_ai_miniled_4k_100_inch_100qned86as_7f60e98b886340869ca2b69dfa39be2e.jpg",
-                    "variant_ids": [1151942718]
-                }
-            }],
-            "vendor": "LG",
-            "published_at": "2025-05-06T09:09:37.937Z",
-            "created_at": "2025-05-06T09:30:04.706Z",
-            "not_allow_promotion": false
-        }
-
         function onQtyChange() {
             let qty = parseInt($('.pd-qtym').val())
             let variantId = parseInt($('#product-selectors').val()) || parseInt($('.details-product [name="variantId"]')
@@ -5464,7 +5348,7 @@
             if (totalVariantGroups === 0) {
                 const priceDisplay = document.getElementById('variant-price');
                 if (priceDisplay) {
-                    @if($product->price > 0)
+                    @if ($product->price > 0)
                         priceDisplay.textContent = "{{ number_format($product->price, 0, ',', '.') }}₫";
                         if (variantPriceHidden) variantPriceHidden.value = "{{ $product->price }}";
                     @else
@@ -5682,7 +5566,7 @@
                         e.preventDefault();
                         alert(
                             `Vui lòng chọn đủ ${totalVariantGroups} tùy chọn sản phẩm trước khi thêm vào giỏ hàng.`
-                            );
+                        );
                         return false;
                     }
                 });

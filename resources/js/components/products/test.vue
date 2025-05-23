@@ -39,6 +39,17 @@
                 </div>
               </div>
               <div class="form-group">
+                <label>Bảng kỹ thuật</label>
+                <TinyMce v-model="objData.km[0].content" />
+                <el-button size="small" @click="showSettingLangExist('km')">Đa ngôn ngữ</el-button>
+                 <div class="dropLanguage" v-if="showLang.km == true">
+                    <div class="form-group" v-for="item,index in lang" :key="index">
+                        <label v-if="index != 0">{{item.name}}</label>
+                        <TinyMce v-if="index != 0" v-model="objData.km[index].content" />
+                    </div>
+                </div>
+              </div>
+              <div class="form-group">
                 <label>Ảnh sản phẩm</label>
                 <ImageMulti v-model="objData.images" :title="'san-pham'"/> 
               </div>
@@ -401,6 +412,7 @@ export default {
         title: false,
         content: false,
         description: false,
+        km: false,
       },
       cate_build_pc:[
         {
@@ -466,6 +478,12 @@ export default {
       cateservice:[],
       lungtung2:[],
       objData: {
+        km: [
+          {
+            lang_code: "vi",
+            content: "",
+          },
+        ],
         lang: "",
         cate_build_pc:"",
         variant:[],
@@ -729,6 +747,20 @@ export default {
           }
         });
       }
+      if (value == "km") {
+        this.showLang.km = !this.showLang.km;
+        this.lang.forEach((value, index) => {
+          if (
+            !this.objData.km[index] &&
+            value.code != this.objData.km[0].lang_code
+          ) {
+            var oj = {};
+            oj.lang_code = value.code;
+            oj.content = "";
+            this.objData.km.push(oj);
+          }
+        });
+      }
     },
     listLang() {
       this.listLanguage()
@@ -746,6 +778,7 @@ export default {
           this.objData.images = JSON.parse(response.data.images);
           this.objData.content = JSON.parse(response.data.content);
           this.objData.description = JSON.parse(response.data.description);
+           this.objData.km = response.data.km ? JSON.parse(response.data.km) : [{lang_code: "vi", content: ""}];
           this.objData.tags = JSON.parse(response.data.tags);
           this.objData.variant = JSON.parse(response.data.variant);
           if(JSON.parse(response.data.size)[0].detail == null){
